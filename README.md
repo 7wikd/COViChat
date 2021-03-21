@@ -1,2 +1,2 @@
-# COV-Chat
+# COViChat
 A chatbot that provides real time information of the current number of COVID cases, as well as other conversations related to the same...
