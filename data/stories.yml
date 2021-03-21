@@ -28,3 +28,19 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: hello world path
+  steps:
+  - intent: hello_world
+# - action: utter_hello_world
+  - action: action_hello_world 
+
+- story: search restaurants path
+  steps:
+  - intent: search_restaurant
+  - action: action_search_restaurant
+
+- story: corona tracker path
+  steps:
+  - intent: corona_state
+  - action: action_corona_tracker

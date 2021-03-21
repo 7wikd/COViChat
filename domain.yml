@@ -8,10 +8,22 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - hello_world
+  - search_restaurant
+  - corona_state
+
+actions: 
+  - action_hello_world
+  - action_search_restaurant
+  - action_corona_tracker
+
+entities: 
+  - hotel
+  - state
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! you up?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -28,6 +40,10 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+#  utter_hello_world:
+#  - text: "This is hello world response"
+
 
 session_config:
   session_expiration_time: 60

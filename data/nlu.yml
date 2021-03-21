@@ -17,6 +17,12 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: hello_world
+  examples: |
+    - world
+    - programming
+    - first
+
 - intent: goodbye
   examples: |
     - good afternoon
@@ -90,3 +96,49 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: search_restaurant
+  examples: |
+    - show me [Indian](hotel) restaurant
+    - show me [Thai](hotel) restaurant
+    - show me [Chinese](hotel) restaurant
+    - show me [Mexican](hotel) restaurant
+
+- intent: corona_state
+  examples: |
+    - [India](state)
+    - [Maharashtra](state)
+    - [Kerala](state)
+    - [Karnataka](state)
+    - [Andhra Pradesh](state)
+    - [Tamil Nadu](state)
+    - [Uttar Pradesh](state)
+    - [West Bengal](state)
+    - [Odisha](state)
+    - [Rajasthan](state)
+    - [Chattisgarh](state)
+    - [Telangana](state)
+    - [Gujarat](state)
+    - [Haryana](state)
+    - [Madhya Pradesh](state)
+    - [Bihar](state)
+    - [Assam](state)
+    - [Punjab](state)
+    - [Jammu and Kashmir](state)
+    - [Jharkhand](state)
+    - [Uttarakhand](state)
+    - [Himachal Pradesh](state)
+    - [Goa](state)
+    - [Tripura](state)
+    - [Manipur](state)
+    - [Chandigarh](state)
+    - [Arunachal Pradesh](state)
+    - [Meghalaya](state)
+    - [Nagaland](state)
+    - [Sikkim](state)
+    - [Mizoram](state)
+    - [Ladakh](state)
+    - [Dadra and Nagar Haveli and Daman and Diu](state)
+    - [Lakshadweep](state)
+    - [Andaman and Nicobar Islands](state)
+    - [Delhi](state)
