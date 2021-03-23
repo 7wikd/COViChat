@@ -1,12 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
@@ -67,11 +58,11 @@ def send_Email(emailid, name, body):
     s = stplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
 
-    s.login("satwik.dalvi@gmail.com", "Itwillbeonyounowson1123")
+    s.login("###############@gmail.com", "#########")
 
     text = "Dear {},\n\n" "Hereby find the required details:\n" + body + "\n\nThanks and regards,\n --COViChat"
 
     subject = "COViChat request summary"
     message = 'Subject:{}\n\n{}'.format(subject,text)
-    s.sendmail("satwik.dalvi@gmail.com",emailid,message)
+    s.sendmail("########@gmail.com",emailid,message)
     s.quit()
