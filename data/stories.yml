@@ -2,45 +2,74 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: Begin path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+- story: faq distancing story
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
+  - intent: faq_distancing
+  - action: utter_faq_distancing
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
   - intent: deny
+  - action: utter_sad
+
+- story: faq symptoms story
+  steps:
+  - intent: faq_symptoms
+  - action: utter_faq_symptoms
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_sad
+
+- story: faq vaccine story
+  steps:
+  - intent: faq_vaccine
+  - action: utter_faq_vaccine
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_sad
+
+- story: faq_vulnerable_story
+  steps:
+  - intent: faq_vulnerable
+  - action: utter_faq_vulnerable
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_sad
+
+- story: faq testing story
+  steps: 
+  - intent: faq_testing
+  - action: utter_faq_testing
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_sad
+
+- story: Thank path
+  steps:
+  - intent: thank
+  - action: utter_happy
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
   - action: utter_goodbye
-
-- story: hello world path
-  steps:
-  - intent: hello_world
-# - action: utter_hello_world
-  - action: action_hello_world 
-
-- story: search restaurants path
-  steps:
-  - intent: search_restaurant
-  - action: action_search_restaurant
 
 - story: corona tracker path
   steps:
+  - intent: corona_helper
+  - action: utter_state_name
   - intent: corona_state
   - action: action_corona_tracker
